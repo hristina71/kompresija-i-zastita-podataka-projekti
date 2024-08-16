@@ -1,0 +1,34 @@
+Prvi projekat iz predmeta Komresija i zaštita podataka se sastoji od:
+
+1. Izračunavanje entropije binarnog fajla
+Na početku se učitava fajl inputFajl1.bin, veličine 1.5MB u kome se nalaze vrednosti 1, 2, 3, 4 i 5 koje su generisane slučajno.
+Prilikom pokretanja koda ispisuje se koliko puta se svaka vrednost pojavljuje, njena verovatnoća i entropija za ceo binarni fajl.
+
+2. Shannon Fano i Huffmanov kod.
+Implementirane su funkcije kodiranja i dekodiranja za Shanon Fano i za Huffmanov kod.
+Ispisuju se simboli i njihove kodne reči nakon čega se nalazi poruka da li je kodiranje i dekodiranje prošlo uspešno ili ne.
+To se proverava tako što se učita ulazni fajl i dekodirani, a zatim se poredi da li su jednaki.
+Nakon toga se ispisuje Stepen kompresije koja se računa tako što se veličina kompresovanog fajla podeli sa veličinom ulaznog fajla.
+
+3. Implementacija LZ77 i LZW algoritma
+Za oba algoritma implementirano je kodiranje i dekodiranje. Na početku se učitava fajl inputFajl2.bin, veličine 1MB u kome se nalaze vrednosti A, B i C koje su generisane slučajno.
+Prilikom pokretanja koda za LZW ispisuje se formirani rečnik u kome se nalazi simboli
+i kod za svaki simbol. Pored toga rečnik sadrži i nove simbole koji su dodati nakon prolaska kroz učitani fajl procesom kodiranja. 
+Prilikom pokretanja koda za LZ77 algoritam ispisuje se izlaz gde se u svakom redu ispisuje po tri uređena elementa: indeks, dužina i znak.
+Na kraju se za oba algoritma ispisuje da li je kodiranje i dekodiranje prošlo uspešno kao i stepen kompresije.
+
+Kod celog projekta pisan je u programskom jeziku Python u interaktivnom okruženju Jupyter Notebook.
+
+Pokretanje: 
+
+Ukoliko nemate Jupyter Notebook potrebno ga je instalirati pokretanjem pip komandne linije:
+pip install jupyterlab ili
+pip install notebook
+
+Nakon instalacije za pokretanje je potrebno u terminalu ukucati komandu:
+jupyter notebook
+
+Kada se notebook otvori tu se nalaze ćelije za pisanje ili izvršavanje koda.
+Kod u ćeliji se pokreće klikom unutar ćelije i pritiskom 'Shift + Enter' ili klikom na dugme Run koje se nalazi na traki sa alatkama.
+Rezultat izvršavanja koda se nalazi ispod ćelije.
+
